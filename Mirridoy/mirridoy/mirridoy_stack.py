@@ -64,7 +64,7 @@ class MirridoyStack(Stack):
 
         # --- SNS Topic for Alerts ---
         alarm_topic = sns.Topic(self, "CanaryAlarmTopic")
-        alarm_topic.add_subscription(subs.EmailSubscription("mirridoy697@gmail.com"))  # 👈 your email
+        alarm_topic.add_subscription(subs.EmailSubscription("mirridoy697@gmail.com"))  
 
         # Alarms
         availability_alarm = cloudwatch.Alarm(
